@@ -551,7 +551,53 @@ h6 {
 }
 
 .hero-content {
-  max-width: 720px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  max-width: 1000px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image-container {
+  flex-shrink: 0;
+  width: 360px;
+  height: 360px;
+  position: relative;
+  border-radius: var(--radius-xl);
+  padding: 4px;
+  background: var(--gradient-primary);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+  animation: float 6s ease-in-out infinite;
+  transform: rotate(3deg);
+  transition: all var(--transition-medium);
+}
+
+.hero-image-container:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 0 60px rgba(0, 212, 255, 0.4);
+}
+
+.hero-image-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: calc(var(--radius-xl) - 4px);
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.05) saturate(1.1);
+  transition: all var(--transition-medium);
+}
+
+.hero-image-container:hover .hero-image {
+  transform: scale(1.05);
 }
 
 .hero-greeting {
@@ -1501,7 +1547,15 @@ h6 {
   }
 
   .hero-content {
+    flex-direction: column-reverse;
     text-align: center;
+    gap: 40px;
+  }
+
+  .hero-image-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
   }
 
   .hero-description {

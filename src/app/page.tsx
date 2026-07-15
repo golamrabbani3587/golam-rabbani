@@ -209,78 +209,88 @@ export default function Home() {
         <div className="hero-overlay" />
         <div className="container">
           <div className="hero-content">
-            <AnimatedSection animation="fade-up" delay={200}>
-              <span className="hero-greeting">👋 Hello, I&apos;m</span>
-            </AnimatedSection>
+            <div className="hero-text">
+              <AnimatedSection animation="fade-up" delay={200}>
+                <span className="hero-greeting">👋 Hello, I&apos;m</span>
+              </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={400}>
-              <h1 className="hero-name">
-                Golam <span className="gradient-text">Rabbani</span>
-              </h1>
-            </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={400}>
+                <h1 className="hero-name">
+                  Golam <span className="gradient-text">Rabbani</span>
+                </h1>
+              </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={600}>
-              <p className="hero-title">
-                Senior Software Engineer &{" "}
-                <span className="highlight">Team Lead</span>
-              </p>
-            </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={600}>
+                <p className="hero-title">
+                  Senior Software Engineer &{" "}
+                  <span className="highlight">Team Lead</span>
+                </p>
+              </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={800}>
-              <p className="hero-description">
-                Crafting robust solutions with Node.js, NestJS, React, and
-                modern DevOps tools. Passionate about AI/LLM technologies,
-                building scalable systems, and leading high-performing teams.
-              </p>
-            </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={800}>
+                <p className="hero-description">
+                  Crafting robust solutions with Node.js, NestJS, React, and
+                  modern DevOps tools. Passionate about AI/LLM technologies,
+                  building scalable systems, and leading high-performing teams.
+                </p>
+              </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={1000}>
-              <div className="hero-actions">
-                <a href="#contact" className="btn-primary">
-                  Get In Touch <ArrowIcon />
-                </a>
-                <a href="#experience" className="btn-secondary">
-                  View Experience <ArrowIcon />
-                </a>
-              </div>
-            </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={1000}>
+                <div className="hero-actions">
+                  <a href="#contact" className="btn-primary">
+                    Get In Touch <ArrowIcon />
+                  </a>
+                  <a href="#experience" className="btn-secondary">
+                    View Experience <ArrowIcon />
+                  </a>
+                </div>
+              </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={1200}>
-              <div className="hero-socials">
-                <a
-                  href="https://github.com/golamrabbani3587"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="GitHub"
-                >
-                  <GithubIcon />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/rabbani204/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="LinkedIn"
-                >
-                  <LinkedinIcon />
-                </a>
-                <a
-                  href="https://web.facebook.com/rabbani.sarkar.543/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="Facebook"
-                >
-                  <FacebookIcon />
-                </a>
-                <a
-                  href="mailto:golamrabbani3587@gmail.com"
-                  className="social-link"
-                  aria-label="Email"
-                >
-                  <MailIcon />
-                </a>
+              <AnimatedSection animation="fade-up" delay={1200}>
+                <div className="hero-socials">
+                  <a
+                    href="https://github.com/golamrabbani3587"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    aria-label="GitHub"
+                  >
+                    <GithubIcon />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/rabbani204/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    aria-label="LinkedIn"
+                  >
+                    <LinkedinIcon />
+                  </a>
+                  <a
+                    href="https://web.facebook.com/rabbani.sarkar.543/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    aria-label="Facebook"
+                  >
+                    <FacebookIcon />
+                  </a>
+                  <a
+                    href="mailto:golamrabbani3587@gmail.com"
+                    className="social-link"
+                    aria-label="Email"
+                  >
+                    <MailIcon />
+                  </a>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            <AnimatedSection animation="scale-in" delay={600}>
+              <div className="hero-image-container">
+                <div className="hero-image-inner">
+                  <img src="/profile-cartoon.png" alt="Golam Rabbani Cartoon" className="hero-image" />
+                </div>
               </div>
             </AnimatedSection>
           </div>
