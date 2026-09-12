@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "Full Stack Developer",
   ],
   authors: [{ name: "Golam Rabbani" }],
+  verification: {
+    google: "OGU7Y5u719i6v0IK2Ja31vo7dpXawBAHpUkUNp69WjQ",
+  },
 };
 
 export default function RootLayout({
