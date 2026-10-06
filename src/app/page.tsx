@@ -92,6 +92,11 @@ const SKILLS = [
     tags: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "SQL", "NoSQL"],
   },
   {
+    icon: "🧩",
+    title: "Microservices",
+    tags: ["RabbitMQ", "Circuit Breaker", "Nest Microservice", "Kafka"],
+  },
+  {
     icon: "🧠",
     title: "AI & Machine Learning",
     tags: ["LLM", "RAG", "Vector DBs", "Embeddings", "Agents", "MCP"],
